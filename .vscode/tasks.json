@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build WEBPACK",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build WEBPACK",
+			"detail": "npx webpack --config-name=production"
+		}
+	]
+}
