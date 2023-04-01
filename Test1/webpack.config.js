@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 const libraryname = 'autoprojectTs'; //`${packagejson.name}`;
 const filename = 'autoprojectTs.js'; //`${packagejson.name}_${packagejson.version}.js`;
-const mapname = 'autoprojectTs_map.js'; //`${packagejson.name}_map_${packagejson.version}.js`;
+//const mapname = 'autoprojectTs_map.js'; //`${packagejson.name}_map_${packagejson.version}.js`;
 
 export default [{
     name: 'production',
