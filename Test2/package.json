@@ -3,14 +3,29 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module", 
   "scripts": {
-    "run_servor": "npx servor src index.html 5050 --reload"
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server",
+    "dev_watch": "webpack --mode development --watch",
+    "run_serv0r": "npx servor dist index.html 5050 --reload",
+    "run_serv0r src": "npx servor dist index.html 5050 --reload"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "servor": "^4.0.2"
+    "@babel/core": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.0",
+    "servor": "^4.0.2",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.21.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

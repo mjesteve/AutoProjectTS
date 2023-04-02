@@ -1,5 +1,5 @@
 # Test2
-
+https://github.com/midudev/webpack-paso-a-paso-live-coding/tree/master
 https://github.com/midudev/webpack-paso-a-paso-live-coding
 https://www.youtube.com/watch?v=ansUGkcrhwY
 
@@ -18,4 +18,32 @@ servor - LocalHost
         🏡 Local:     http://localhost:5050
         📡 Network:   http://10.0.2.15:5050
 
+React
+    npm install react react-dom
+
+Bebel (transformaciones)
+
+    npm i -D @babel/core babel-loader @babel/preset-react @babel/preset-env
+
+Plugin html-webpack-plugin (conjunto de plugins - uno de ellos crea al vuelto el documento html)
+
+    npm install --save-dev html-webpack-plugin
+
+Sustituto de "Serv0" - plugin webpack: devServer
+    (no crea los ficheros en disco sino en memoria lo que lo hace más rápido)
+    npm install webpack-dev-server --save-dev
+
+    sustituye en el lanzamiento a "webpack" y pondremos...
     
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server", <--------------------------------------
+    "dev_watch": "webpack --mode development --watch",
+    "run_serv0r": "npx servor dist index.html 5050 --reload",
+    "run_serv0r src": "npx servor dist index.html 5050 --reload"
+  },
+
+'=============================================================================================
+https://github.com/midudev/webpack-paso-a-paso-live-coding/tree/typescript-split-code
+
+
